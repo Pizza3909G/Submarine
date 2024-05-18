@@ -1,3 +1,7 @@
+/**
+* @file Vector3.h
+*/
+#pragma once
 #include <string>
 #include <cmath>
 
