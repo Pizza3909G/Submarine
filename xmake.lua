@@ -14,15 +14,16 @@ target("Submarine")
         "src/raklib/**.cpp"
     )
     add_headerfiles(
-        "include/math/**.h",
-        "include/math/**.hpp",
-        "include/minecraft/**.h",
-        "include/minecraft/**.hpp",
-        "include/raklib/**.h",
-        "include/raklib/**.hpp"
+        "include/(math/**.h)",
+        "include/(math/**.hpp)",
+        "include/(minecraft/**.h)",
+        "include/(minecraft/**.hpp)",
+        "include/(raklib/**.h)",
+        "include/(raklib/**.hpp)"
     )
     add_includedirs("include")
     add_packages(
+        "gsl",
         "fmt",
         "leveldb",
         { public = true }
